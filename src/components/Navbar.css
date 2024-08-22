@@ -1,0 +1,13 @@
+#name{
+    font-family: "DM Serif Text", sans-serif;
+    color: whitesmoke;
+    position: relative;
+    margin:1%;
+    
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
