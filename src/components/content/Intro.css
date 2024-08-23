@@ -1,0 +1,25 @@
+#intro{
+    width:100vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:left;
+    margin: 1.5% 0.5%;
+    padding: 1.5% 0.5%;
+}
+.intro-item{
+    font-family: 'Bebas Neue', sans-serif;
+    color:rgba(209, 213, 219, 0.513);
+    font-size: 130px;
+    margin: 0 5%;
+}
+#changing-text{
+    display: flex;
+}
+#intro-para{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: left;
+    width:79vw;
+}

@@ -1,13 +1,19 @@
 #name{
     font-family: "DM Serif Text", sans-serif;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, 0.711);
     position: relative;
     margin:1%;
-    
+    padding-left:5%;
 }
 #nav-bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    margin-top: 60px; /* Adjust this value based on the height of your nav-bar */
 }

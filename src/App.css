@@ -1,5 +1,6 @@
-.App {
+html {
   text-align: center;
-  background-image: url('./img/p1.jpg');
+  background-image: url('./img/p2.jpg');
+  width: 90vw;
 }
 
