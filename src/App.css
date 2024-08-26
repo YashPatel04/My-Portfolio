@@ -4,5 +4,18 @@ html {
   background-size:cover; /* Make the image cover the entire viewport */
   background-position: center; /* Center the image */
   width: 90vw;
+  overflow: hidden; /* Hide the scrollbar */
+  overflow-y:scroll; /* Allow vertical scrolling */
+
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none; /* Firefox */
+}
+.Yash-Intro{
+  position: fixed;
+}

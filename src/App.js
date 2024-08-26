@@ -16,11 +16,13 @@ function App() {
     gsap.to(".Yash-Intro", {
       scrollTrigger: {
         trigger: ".Yash-Intro",
-        start: "+=.5",
+        start: "top 1%",
         end: "bottom bottom",
-        scrub: 1,
+        scrub: 1, 
+        pin: true,  
+        pinSpacing: false,
       },
-      y: -70,
+      y: -60,
       opacity: 0, // Provide a value for opacity
     });
   }, []);
@@ -33,10 +35,10 @@ function App() {
       <Router>
         <Navbar />
         <div className='Yash-Intro'><Intro/></div>
-        <Timeline />
-        <Routes>
-          
-        </Routes>
+        <div className='Yash-Time'>
+          <Timeline />
+        </div>
+        <Routes></Routes>
         <Footer />
       </Router>
       </>

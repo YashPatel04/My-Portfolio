@@ -21,7 +21,7 @@ function Intro() {
   return (
     <div>
       <section id='intro'>
-        <section className='intro-item'>
+        <section id='introItem1' className='intro-item'>
             Hello I'm Yash,
         </section>
         <section className='intro-item' id='changing-text'>
