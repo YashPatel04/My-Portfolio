@@ -3,8 +3,6 @@ position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1000; /* Ensure it stays on top of other elements */
-   
-    box-shadow: 0 -3px 20px -5px #00000026;
     font-family: "Bebas Neue", sans-serif;
     font-size: 18px;
     display: flex;

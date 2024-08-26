@@ -1,6 +1,8 @@
 html {
   text-align: center;
-  background-image: url('./img/p2.jpg');
+  background-image: url('./components/img/p2.jpg');
+  background-size:cover; /* Make the image cover the entire viewport */
+  background-position: center; /* Center the image */
   width: 90vw;
 }
 

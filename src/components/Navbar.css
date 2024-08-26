@@ -1,9 +1,10 @@
 #name{
     font-family: "DM Serif Text", sans-serif;
-    color: rgba(245, 245, 245, 0.711);
+    color: rgba(245, 245, 245, 0.871);
     position: relative;
     margin:1%;
     padding-left:5%;
+    opacity: 0;
 }
 #nav-bar{
     display: flex;
