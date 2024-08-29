@@ -1,18 +1,21 @@
 .ball {
     fill: white;
-    visibility: hidden;
-  }
-  
-  .line {
+    opacity: 1;
+    transform-origin: center;
+  } 
+.line {
     fill: none;
-    stroke: white;
+    stroke: none;
     stroke-width: 2px;
   }
-  
-  text {
+.line section{
+  stroke: white;
+}
+.text {
     fill: white;
     font-size: 15px; 
-    
     font-family: 'Bebas Neue', sans-serif;
+    opacity: 0;
+    transform-origin: center;
+      
 }
-  
