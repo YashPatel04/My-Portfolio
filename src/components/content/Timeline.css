@@ -1,7 +1,6 @@
 .ball {
     fill: white;
     opacity: 1;
-    transform-origin: center;
   } 
 .line {
     fill: none;
@@ -15,7 +14,4 @@
     fill: white;
     font-size: 15px; 
     font-family: 'Bebas Neue', sans-serif;
-    opacity: 0;
-    transform-origin: center;
-      
 }

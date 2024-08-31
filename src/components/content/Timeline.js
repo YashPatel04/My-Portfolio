@@ -10,39 +10,51 @@ gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 gsap.defaults({ease: "none"});
 
 function Timeline() {
- 
+  useEffect(() => {
+    const pulses = gsap
+      .timeline({
+        defaults: {
+          duration: 0.05,
+          autoAlpha: 1,
+          scale: 2,
+          transformOrigin: "center",
+          ease: "power3.out",
+          visibility: "visible",
+        },
+      })
+      .to(".ball02, .text01", {}, 0.45)
+      .to(".ball03, .text02", {}, 0.55)
+      .to(".ball04, .text03", {}, 0.70)
 
-const pulses = gsap.timeline({
-  defaults: {
-    duration: 0.05, 
-    autoAlpha: 1, 
-    scale: 2, 
-    transformOrigin: 'center', 
-    ease: "elastic(2.5, 1)"
-  }})
-.to(".ball02, .text01", {}, 0.2) 
-.to(".ball03, .text02", {}, 0.33)
-.to(".ball04, .text03", {}, 0.46)
-
-const main = gsap.timeline({defaults: {duration: 1},
-  scrollTrigger: {
-    trigger: "#svg-stage",
-    scrub: true,
-    start: "top center",
-    end: "bottom center"
-  }})
-.to(".ball01", {duration: 0.01, autoAlpha: 1})
-.from(".theLine", {drawSVG: 0}, 0)
-.to(".ball01", {motionPath: {
-  path: ".theLine", 
-  align:".theLine",
-  alignOrigin: [0.5, 0.5],
-}}, 0)
-.add(pulses, 0);
+    const main = gsap
+      .timeline({
+        defaults: { duration: 1 },
+        scrollTrigger: {
+          trigger: "#svg",
+          scrub: true,
+          start: "top center",
+          end: "bottom center",
+        },
+      })
+      .set(".ball01", { autoAlpha: 1 }) 
+      .to(".ball01", { duration: 0, autoAlpha: 1 })
+      .to(
+        ".ball01",
+        {
+          motionPath: {
+            path: ".theLine",
+            align: ".theLine",
+            alignOrigin: [0.5, 0.5],
+          },
+        },
+        0
+      )
+      .add(pulses, 0);
+  }, []);
 
   return (
     <div> 
-      <svg id="svg-stage" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
+      <svg id="svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 1200">
         <path class="line01 line" d="M 10 200 600 200" ></path>
         <path class="line02 line" d="M 10 400 600 400" ></path>
         <path class="line03 line" d="M 10 600 600 600" ></path>

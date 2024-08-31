@@ -7,7 +7,7 @@ import Intro from './components/content/Intro';
 import Timeline from './components/content/Timeline';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+import Skills from './components/content/Skills';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -38,6 +38,7 @@ function App() {
         <div className='Yash-Time'>
           <Timeline />
         </div>
+        <Skills />
         <Routes></Routes>
         <Footer />
       </Router>
