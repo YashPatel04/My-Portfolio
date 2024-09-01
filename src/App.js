@@ -8,6 +8,7 @@ import Timeline from './components/content/Timeline';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Skills from './components/content/Skills';
+import video from './components/img/bg-vid.mp4';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -28,9 +29,11 @@ function App() {
   }, []);
   
   
-
   return (
     <div className="App">
+      <div class="video-container">
+        <video autoplay muted loop id="bg-video" src={video} type="video/mp4" />
+      </div>
       <>
       <Router>
         <Navbar />
@@ -38,7 +41,7 @@ function App() {
         <div className='Yash-Time'>
           <Timeline />
         </div>
-        <Skills />
+        <Skills className='Yash-skills'/>
         <Routes></Routes>
         <Footer />
       </Router>

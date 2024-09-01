@@ -1,10 +1,11 @@
 import React from 'react'
-
-const Skillcard = ({title, iconUrl, isActive, onClick }) =>{
+import "./Skillcard.css"
+import phto from './img/frontend.png'
+const Skillcard = ({title, icon, isActive, onClick }) =>{
     return(
         <div className={`skills-card ${isActive ? "active":""}`} onClick={()=>onClick()}>
             <div className='skill-icon'>
-                <img src={iconUrl} alt={title}/>
+                <img src={phto} alt={title}/>
             </div>
             <span>{title}</span>
         </div>

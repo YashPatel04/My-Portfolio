@@ -1,12 +1,45 @@
 .Skills-container{
-    margin: 4rem 0;
+    margin: 4rem 5.5%;
     position: relative;
+    color:whitesmoke;
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.skills-heading{
+    opacity: 0;
+    align-self: center;
+    width:200px;
+    text-align: center;
+    position: relative;
+    margin: 1rem;
+    margin-bottom: 2rem;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Skills-container h1 {
+    top:0;
+    margin:0;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.233);
+    position: relative;
+    font-family: "DM Serif Text", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    z-index: -1;
+    
 }
 
-.Skills-container h5{
-    font-size: 1.5rem;
+.Skills-container h5 {
+    position: absolute;
+    margin: 0;
+    font-size: 2rem;
+    font-family: "DM Serif Text", sans-serif;
     font-weight: 600;
-    margin-bottom: 3.5rem;
+    z-index: 2;
 }
 .Skills-content{
     display: flex;

@@ -1,12 +1,27 @@
 html {
   text-align: center;
-  background-image: url('./components/img/p2.jpg');
-  background-size:cover; /* Make the image cover the entire viewport */
-  background-position: center; /* Center the image */
-  width: 90vw;
   overflow: hidden; /* Hide the scrollbar */
   overflow-y:scroll; /* Allow vertical scrolling */
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Ensure the video is behind other content */
+  
+}
 
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire viewport */
+  transform: translate(-50%, -50%);
 }
 html::-webkit-scrollbar {
   display: none;
@@ -18,4 +33,9 @@ html {
 }
 .Yash-Intro{
   position: fixed;
+  min-height: 100vh;
+}
+.Yash-skills{
+  min-height: 100vh;
+  width: auto;
 }
