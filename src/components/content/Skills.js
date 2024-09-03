@@ -19,10 +19,11 @@ function Skills() {
         trigger: ".skills-heading",
         start: "bottom top",
         end: "bottom bottom",
-        scrub: 1.80,
+        scrub: false,
       },
       opacity: 1, 
     });
+    
   }, []);
   return (
     <div className='Skills-container'>

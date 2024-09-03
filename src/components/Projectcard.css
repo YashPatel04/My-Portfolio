@@ -1,0 +1,31 @@
+.project-card{
+    height:66vh;
+    width: 35vw;
+    backdrop-filter: blur(1rem);
+    background:  rgba(255, 255, 255, 0.176);
+    border-radius: 10px;
+    margin:2rem;
+    
+}
+.project-image{
+    max-height:40vh;
+    width:35vw;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow:hidden;
+}
+.project-text{
+    text-align: left;
+    font-family: "SUSE", sans-serif;
+    font-size: 1vw;
+    color:whitesmoke;
+}
+.project-info{
+    padding:2%;
+
+}
+.individual-title{
+    color:whitesmoke;
+    font-family: 'SUSE', sans-serif;
+}

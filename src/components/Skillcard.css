@@ -1,5 +1,4 @@
 .skills-card{
-    
     opacity: 0;
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
@@ -10,7 +9,12 @@
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in;
+   
 }
+.skills-card.animate {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
 .skills-card:hover,
 .skills-card:active{
     background:linear-gradient(180deg, #aa94fe, #7c5fe6 100%);

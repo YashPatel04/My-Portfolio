@@ -9,6 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Skills from './components/content/Skills';
 import video from './components/img/bg-vid.mp4';
+import Project from './components/content/Project';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           <Timeline />
         </div>
         <Skills className='Yash-skills'/>
+        <Project />
         <Routes></Routes>
         <Footer />
       </Router>

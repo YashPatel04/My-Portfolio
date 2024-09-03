@@ -15,8 +15,8 @@ const Skillcard = ({title, icon, isActive, onClick }) =>{
             scrollTrigger: {
               trigger: ".skills-card",
               start: "center top",
-              end: "bottom top",
-              scrub: 1,
+              end: "bottom bottom",
+              scrub: false,
             }
           });
       }, []);

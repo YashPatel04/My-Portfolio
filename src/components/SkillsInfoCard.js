@@ -18,7 +18,7 @@ const SkillsInfoCard = ({heading, skills}) => {
               trigger: ".skills-info-card",
               start: "center top",
               end: "bottom top",
-              scrub: 2,
+              scrub: false,
 
             }
           });
