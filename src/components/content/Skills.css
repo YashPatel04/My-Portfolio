@@ -28,7 +28,7 @@
     position: relative;
     font-family: "DM Serif Text", sans-serif;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 4vw;
     z-index: -1;
     
 }
@@ -36,7 +36,7 @@
 .Skills-container h5 {
     position: absolute;
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.45vw;
     font-family: "DM Serif Text", sans-serif;
     font-weight: 600;
     z-index: 2;

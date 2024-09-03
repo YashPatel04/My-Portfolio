@@ -1,4 +1,6 @@
 .skills-card{
+    
+    opacity: 0;
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     padding: 2.5rem;
@@ -11,12 +13,11 @@
 }
 .skills-card:hover,
 .skills-card:active{
-    transform: scale(1.05); /* Example active state style */
     background:linear-gradient(180deg, #aa94fe, #7c5fe6 100%);
 }
 .skills-card span{
     font-family: "DM Serif Text", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1vw;
     font-weight: 500;
 }
 

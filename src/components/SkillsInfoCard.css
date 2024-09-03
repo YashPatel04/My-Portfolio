@@ -6,7 +6,7 @@
     background: rgba(22, 17, 47, 0.398);
     margin:0;
     backdrop-filter: blur(1rem);
-
+    opacity: 0;
 }
 #skill-var-heading{
     padding:10px;
@@ -14,7 +14,7 @@
 
 }
 .skills-info-card h6 {
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-weight: 500;
     background: linear-gradient (180deg, #ac96ff 0%, #7c5fe6 100%);
     background-clip: text;
@@ -32,7 +32,7 @@
     justify-content: space-between;
 }
 .skill-info p{
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 500;
 }
 .skill-info .percentage{

@@ -5,6 +5,7 @@ import Skillcard from '../Skillcard.js';
 import SkillsInfoCard from '../SkillsInfoCard.js';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+
 //Timestamps: 35:21
 function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);

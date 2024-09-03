@@ -21,8 +21,17 @@
     font-size: 30px;
     font-family: "SUSE", sans-serif;
     text-align: left;
-    width:79vw;
+    max-width:79vw;
 }
 #introItem1{
     margin-top: 8vh;
+}
+@media screen and (min-width:1920px) {
+    .intro{
+        margin-top: 15vh;
+        padding-top: 15vh; 
+    }
+    .intro-para{
+        max-width: 73vw;
+    }
 }

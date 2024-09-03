@@ -1,8 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SkillsInfoCard.css';
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
+// Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 const SkillsInfoCard = ({heading, skills}) => {
     console.log({heading});
+
+    useEffect(() => {
+        gsap.to(".skills-info-card", {
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.2, // Adjust the stagger value for timing
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: ".skills-info-card",
+              start: "center top",
+              end: "bottom top",
+              scrub: 2,
+
+            }
+          });
+      }, []);
+
     return <div className='skills-info-card'>
         <h6 id='skill-var-heading'>{heading}</h6>
         
