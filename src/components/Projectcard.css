@@ -1,5 +1,5 @@
 .project-card{
-    height:66vh;
+    height:auto;
     width: 35vw;
     backdrop-filter: blur(1rem);
     background:  rgba(255, 255, 255, 0.176);
@@ -28,4 +28,24 @@
 .individual-title{
     color:whitesmoke;
     font-family: 'SUSE', sans-serif;
+}
+#gh-submit{
+    background-color: black;
+    color: whitesmoke;
+    width:95px;
+    height:30px;
+    border-radius:3px;
+    border:none;
+    margin-bottom: 1%;
+}
+#gh-submit:hover{
+    background-color: #e3dada;
+    color:black;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.549); 
+    transition: all 0.5s ease;
+
+}
+#gh-submit:disabled {
+    background-color: #ccc; /* Gray background for disabled state */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
 }

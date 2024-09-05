@@ -13,8 +13,8 @@ import Project from './components/content/Project';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-
   useEffect(() => {
+    
     gsap.to(".Yash-Intro", {
       scrollTrigger: {
         trigger: ".Yash-Intro",

@@ -6,7 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Skillcard = ({title, icon, isActive, onClick }) =>{
     useEffect(() => {
-
+        
         gsap.to(".skills-card", {
             opacity: 1,
             duration: 0.5,
