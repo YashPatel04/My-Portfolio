@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React, { useLayoutEffect, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Footer from './components/footer';
 import Navbar from './components/Navbar';
 import Intro from './components/content/Intro';
@@ -13,8 +13,17 @@ import Project from './components/content/Project';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const introRef = useRef(null);
+
   useEffect(() => {
-    
+    const toggleVisibility = (isVisible) => {
+      if (isVisible) {
+        gsap.to(introRef.current, { display: 'blockY', duration: 0.5 });
+      } else {
+        gsap.to(introRef.current, { display: 'none', duration: 0.5 });
+      }
+    };
+
     gsap.to(".Yash-Intro", {
       scrollTrigger: {
         trigger: ".Yash-Intro",
@@ -23,30 +32,31 @@ function App() {
         scrub: 1, 
         pin: true,  
         pinSpacing: false,
+        onEnter: () => toggleVisibility(true),
+        onLeave: () => toggleVisibility(false)
       },
       y: -60,
-      opacity: 0, // Provide a value for opacity
+      opacity: 0,
     });
   }, []);
-  
-  
+
   return (
     <div className="App">
-      <div class="video-container">
-        <video autoplay muted loop id="bg-video" src={video} type="video/mp4" />
+      <div className="video-container">
+        <video autoPlay muted loop id="bg-video" src={video} type="video/mp4" />
       </div>
       <>
-      <Router>
-        <Navbar />
-        <div className='Yash-Intro'><Intro/></div>
-        <div className='Yash-Time'>
-          <Timeline />
-        </div>
-        <Skills className='Yash-skills'/>
-        <Project />
-        <Routes></Routes>
-        <Footer />
-      </Router>
+        <Router>
+          <Navbar />
+          <div ref={introRef} className='Yash-Intro'><Intro /></div>
+          <div className='Yash-Time'>
+            <Timeline />
+          </div>
+          <Skills className='Yash-skills' />
+          <Project />
+          <Routes></Routes>
+          <Footer />
+        </Router>
       </>
     </div>
   );

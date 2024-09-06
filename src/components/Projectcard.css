@@ -43,7 +43,6 @@
     color:black;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.549); 
     transition: all 0.5s ease;
-
 }
 #gh-submit:disabled {
     background-color: #ccc; /* Gray background for disabled state */
