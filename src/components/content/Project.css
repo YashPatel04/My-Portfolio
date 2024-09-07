@@ -10,8 +10,8 @@
     height: 100%;
     position: relative;
     margin: 50px 45px;
-
 }
+
 .project-item {
     margin:10px;
  }
@@ -29,11 +29,11 @@
     animation-duration: 2s;
 }
 #pi-1 .project-card {
-    width: 30vw;
+    width: 29.8vw;
     margin-bottom: 0;
 }
 #pi-1  .project-card img{
-    width: 30vw;
+    width: 29.8vw;
 }
 #pi-2 .project-card{
     width: 19.6vw;

@@ -1,0 +1,22 @@
+.Projects-header{
+    margin-left:0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: auto; /* Allows scrolling if content overflows */
+    -ms-overflow-style: none;  /* Hides scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hides scrollbar in Firefox */
+}
+
+.Projects-header::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers */
+}
+.header-child{
+    font-family: "DM Serif Text",sans-serif;
+    font-size: 85px;
+    color:whitesmoke;
+    width: auto;
+    margin-right:5px;
+    margin-left:5px;
+}

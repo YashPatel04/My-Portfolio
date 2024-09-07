@@ -9,6 +9,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Skills from './components/content/Skills';
 import Project from './components/content/Project';
+import Projectheader from './components/Projectheader';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Timeline />
           </div>
           <Skills className='Yash-skills' />
+          <Projectheader />
           <Project />
           <Routes></Routes>
           <Footer />
