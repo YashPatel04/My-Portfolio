@@ -1,60 +1,44 @@
-import React,{useEffect, useRef} from 'react'
-import Projectcard from '../Projectcard'
-import './Project.css'
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+// src/components/content/Project.js
+import React from 'react';
+import Projectcard from '../Projectcard';
+import './Project.css';
 
 function Project() {
-    
-  const cont = useRef(null);
-
-  useEffect(() => {
-    let sections = gsap.utils.toArray(".project-card");
-    gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: cont.current,
-        pin: true,
-        scrub: 1,
-        snap: 1 / (sections.length - 1),
-        end: () => "+=" + cont.current.offsetWidth  
-      }
-    });
-  }, []);
-
   return (
-    <div ref={cont} className='Yash-Projects'>
-    
-        <Projectcard
-            className='Ind-card'
-            title="Library Management System"
-            text="Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue. Aliquam habitasse feugiat tristique bibendum eros eu porta ante. Aenean mauris fusce lacinia senectus vestibulum vel hac lacinia"
-        />
-        <Projectcard
-        className='Ind-card'
-            title="Library Management System"
-            text="Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue. Aliquam habitasse feugiat tristique bibendum eros eu porta ante. Aenean mauris fusce lacinia senectus vestibulum vel hac lacinia"
-        />
-        <Projectcard
-        className='Ind-card'
-            title="Library Management System"
-            text="Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue. Aliquam habitasse feugiat tristique bibendum eros eu porta ante. Aenean mauris fusce lacinia senectus vestibulum vel hac lacinia"
-        />
-        <Projectcard
-        className='Ind-card'
-            title="Library Management System"
-            text="Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue. Aliquam habitasse feugiat tristique bibendum eros eu porta ante. Aenean mauris fusce lacinia senectus vestibulum vel hac lacinia"
-        />
-        <Projectcard
-        className='Ind-card'
-            title="Library Management System"
-            text="Lorem ipsum odor amet, consectetuer adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue. Aliquam habitasse feugiat tristique bibendum eros eu porta ante. Aenean mauris fusce lacinia senectus vestibulum vel hac lacinia"
-        />
-      
-    </div>
-  )
+    <div className="Yash-Projects">
+      <div className='projects-cont'>
+        <ul id='pi-1' className='project-item'>
+            <Projectcard
+              className="Ind-card"
+              title="Library Management System"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt metus cras facilisi convallis in congue."
+            />
+            <Projectcard
+              className="Ind-card"
+              title="E-commerce Platform"
+              text="Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae."
+            />
+          </ul>
+          <ul id='pi-2' className='project-item'>
+            <Projectcard
+              className="Ind-card"
+              title="Social Media App"
+              text="Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt."
+            />
+            <Projectcard
+              className="Ind-card"
+              title="Portfolio Website"
+              text="Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum porta."
+            />
+            <Projectcard
+              className="Ind-card"
+              title="Mobile Game Development"
+              text="Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat."
+            />
+          </ul>
+        </div>
+      </div>
+  );
 }
 
-export default Project
+export default Project;

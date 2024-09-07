@@ -1,16 +1,17 @@
 .project-card{
     height:auto;
-    width: 35vw;
+    width: 25vw;
     backdrop-filter: blur(1rem);
-    background:  rgba(255, 255, 255, 0.176);
-    border-radius: 10px;
-    margin:2rem;
+    background:  rgba(255, 255, 255, 0.176);    
+    border-radius: 5px;
+    margin:10px;
+    margin-top:0;
     
 }
 .project-image{
-    max-height:40vh;
-    width:35vw;
-    border-radius: 10px;
+    max-height:25vh;
+    width:25vw;
+    border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     overflow:hidden;
@@ -18,7 +19,7 @@
 .project-text{
     text-align: left;
     font-family: "SUSE", sans-serif;
-    font-size: 1vw;
+    font-size: 0.75vw;
     color:whitesmoke;
 }
 .project-info{

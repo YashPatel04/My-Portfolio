@@ -8,7 +8,6 @@ import Timeline from './components/content/Timeline';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Skills from './components/content/Skills';
-import video from './components/img/bg-vid.mp4';
 import Project from './components/content/Project';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,7 +17,7 @@ function App() {
   useEffect(() => {
     const toggleVisibility = (isVisible) => {
       if (isVisible) {
-        gsap.to(introRef.current, { display: 'blockY', duration: 0.5 });
+        gsap.to(introRef.current, { display: 'block', duration: 0.5 });
       } else {
         gsap.to(introRef.current, { display: 'none', duration: 0.5 });
       }
@@ -29,7 +28,7 @@ function App() {
         trigger: ".Yash-Intro",
         start: "top 1%",
         end: "bottom bottom",
-        scrub: 1, 
+        scrub:1, 
         pin: true,  
         pinSpacing: false,
         onEnter: () => toggleVisibility(true),
@@ -42,9 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="video-container">
-        <video autoPlay muted loop id="bg-video" src={video} type="video/mp4" />
-      </div>
+      
       <>
         <Router>
           <Navbar />

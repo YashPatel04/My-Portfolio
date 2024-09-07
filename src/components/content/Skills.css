@@ -5,7 +5,7 @@
     font-family: "Noto Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
 }
 .skills-heading{
     opacity: 0;

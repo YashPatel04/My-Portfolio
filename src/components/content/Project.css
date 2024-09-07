@@ -1,4 +1,45 @@
-.Yash-Projects{
-    box-sizing: border-box;
+.projects-cont{
     display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+}
+.Yash-Projects{
+    height: 100%;
+    position: relative;
+    margin: 50px 45px;
+
+}
+.project-item {
+    margin:10px;
+ }
+  
+.project-item  {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+}
+  
+
+.fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+#pi-1 .project-card {
+    width: 30vw;
+    margin-bottom: 0;
+}
+#pi-1  .project-card img{
+    width: 30vw;
+}
+#pi-2 .project-card{
+    width: 19.6vw;
+    margin-top: 0;
+}
+#pi-2 .project-card img{
+    width: 19.6vw;
+    height: 23vh;
 }
