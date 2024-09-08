@@ -1,0 +1,27 @@
+.Yash-contact{
+    max-height: 100vh;
+    min-height: 100vh;
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+}
+.contact-items{
+    display: flex;
+}
+#contact-para{
+    color: whitesmoke;
+    margin: 5rem;
+    margin-top:13vh;
+    max-width: 40vw;
+    text-align: left;
+    font-size: xx-large;
+    font-family: "SUSE",sans-serif;
+}
+#contact-head{
+    margin:0;
+    font-size:5rem;
+    font-family: "DM Serif Text",sans-serif;
+    color: whitesmoke;
+}
+.content-text{
+    margin: 5rem;
+}

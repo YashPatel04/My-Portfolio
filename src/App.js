@@ -10,6 +10,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Skills from './components/content/Skills';
 import Project from './components/content/Project';
 import Projectheader from './components/Projectheader';
+import Contact from './components/content/contact.js';
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
         start: "top 1%",
         end: "bottom bottom",
         scrub:1, 
-        pin: true,  
+        pin: true,    
         pinSpacing: false,
         onEnter: () => toggleVisibility(true),
         onLeave: () => toggleVisibility(false)
@@ -53,6 +54,7 @@ function App() {
           <Skills className='Yash-skills' />
           <Projectheader />
           <Project />
+          <Contact />
           <Routes></Routes>
           <Footer />
         </Router>
