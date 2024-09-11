@@ -64,6 +64,6 @@ input:focus, textarea:focus {
     transition: all 0.1s ;
 }
 #submit:disabled {
-  
+    background-color: rgb(133, 127, 127);
     cursor: not-allowed; /* Change cursor to indicate disabled state */
 }

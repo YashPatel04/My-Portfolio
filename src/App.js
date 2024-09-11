@@ -39,6 +39,15 @@ function App() {
       y: -60,
       opacity: 0,
     });
+    gsap.to(".Yash-footer", {
+      scrollTrigger: {
+        trigger: ".contact-sec",
+        start: "top top",
+        end: "bottom bottom",
+        scrub:1,  
+      },
+      opacity: 0,
+    });
   }, []);
 
   return (
@@ -54,9 +63,9 @@ function App() {
           <Skills className='Yash-skills' />
           <Projectheader />
           <Project />
-          <Contact />
+          <div className='contact-sec'><Contact /></div>
           <Routes></Routes>
-          <Footer />
+          <div className='Yash-footer'><Footer /></div>
         </Router>
       </>
     </div>

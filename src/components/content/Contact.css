@@ -25,3 +25,16 @@
 .content-text{
     margin: 5rem;
 }
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem;
+}
+.icon-element{
+    margin: .5rem;
+    transition: box-shadow 0.3s ease-in-out; 
+}
+.icon-element:hover{
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.287);
+}
