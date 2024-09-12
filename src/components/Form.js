@@ -29,8 +29,8 @@ function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
           <div className='form-item'>
             <label>Your Name</label>
-            <input className='box' name="firstName" {...register("firstName",{required:true})}/>
-            {errors.firstName && <p className='warnings'>First name is required.</p>}
+            <input className='box' name="Name" {...register("Name",{required:true})}/>
+            {errors.Name && <p className='warnings'>Name is required.</p>}
           </div>
           <div className='form-item'>
             <label>Your Email</label>
