@@ -1,14 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import './bar.css';
 
 function Menu() {
   return (
     <div id='bar'>   
-      <Link className='bar-item' to=''>About</Link>
-      <Link className='bar-item' to=''>Skills</Link>
-      <Link className='bar-item' to=''>Projects</Link>
-      <Link className='bar-item' to=''>Contact</Link>
+      <ScrollLink className='bar-item' to='ypps-1' smooth={true} duration={500}>
+        About
+      </ScrollLink>
+      <ScrollLink className='bar-item' to='ypps-3' smooth={true} duration={500}>
+        Skills
+      </ScrollLink>
+      <ScrollLink className='bar-item' to='ypps-4' smooth={true} duration={500}>
+        Projects
+      </ScrollLink>
+      <ScrollLink className='bar-item' to='ypps-5' smooth={true} duration={500}>
+        Contact
+      </ScrollLink>
     </div>
   )
 }
