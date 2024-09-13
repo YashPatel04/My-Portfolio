@@ -32,7 +32,7 @@ async function sendMail({ Name, email, message }) {
 
         const mailOptions = {
             from: 'Yash Patel <ydevelop2024@gmail.com>',
-            to: 'jdgt.yp.2004@gmail.com',
+            to: 'ypatel2@stetson.edu',
             subject: 'You have a new inquiry',
             text: `You have a new contact form submission from ${Name}.\n\nEmail: ${email}\n\nMessage: ${message}`,
             html: `<h1>New Contact Inquiry</h1>
