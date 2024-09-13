@@ -10,10 +10,10 @@ function Footer() {
         <p>scroll to know about me</p>
       </section>
       <section id='foot-links'>
-        <Link className='foot-item' to='' >LinkedIn</Link>
-        <Link className='foot-item' to='' >GitHub</Link>
-        <Link className='foot-item' to='' >Email</Link>
-        <Link className='foot-item' to='' >Resume</Link>
+        <Link className='foot-item' target='_blank' to='https://www.linkedin.com/in/yashpatel2004/' >LinkedIn</Link>
+        <Link className='foot-item' target='_blank' to='https://github.com/YashPatel04' >GitHub</Link>
+        <Link className='foot-item' target='_blank' to='mailto:ypatel2@stetson.edu' >Email</Link>
+        <Link className='foot-item' target='_blank' to='' >Resume</Link>
       </section>
     </div>
   )
