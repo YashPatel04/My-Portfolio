@@ -63,9 +63,8 @@ function App() {
       <>
         <Router>
           <Navbar />
-          <div id='ypps-1'></div>
           <div ref={introRef}  className='Yash-Intro'><Intro /></div>
-          <div id='ypps-2' className='Yash-Time'><Timeline /></div>
+          <div id='ypps-1' className='Yash-Time'><Timeline /></div>
           <div id='ypps-3'><Skills className='Yash-skills' /></div>
           <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>
           <div id='ypps-5' className='contact-sec'><Contact /></div>

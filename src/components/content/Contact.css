@@ -30,11 +30,16 @@
     flex-direction: column;
     justify-content: center;
     margin:1rem;
+    margin-bottom: 12rem;
+    margin-left: 2rem
 }
 .icon-element{
     margin: .5rem;
     transition: box-shadow 0.3s ease-in-out; 
+    border-radius: 100px;
+
 }
 .icon-element:hover{
+    color:0 0 15px 5px rgba(255, 255, 255, 0.287) ;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.287);
 }

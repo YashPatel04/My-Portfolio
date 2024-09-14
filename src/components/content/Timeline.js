@@ -38,6 +38,7 @@ function Timeline() {
       })
       .set(".ball01", { autoAlpha: 1 }) 
       .to(".ball01", { duration: 0, autoAlpha: 1 })
+      .from(".ball01", { duration: 0, autoAlpha: 1 })
       .to(
         ".ball01",
         {

@@ -1,6 +1,6 @@
 .ball {
     fill: white;
-    opacity: 1;
+    visibility: hidden;
   } 
 .line {
     fill: none;
