@@ -15,3 +15,6 @@
     font-size: 15px; 
     font-family: 'Bebas Neue', sans-serif;
 }
+.ball01 {
+  visibility: visible !important;
+}

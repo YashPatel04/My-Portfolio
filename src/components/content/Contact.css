@@ -22,9 +22,7 @@
     font-family: "DM Serif Text",sans-serif;
     color: whitesmoke;
 }
-.content-text{
-    margin: 5rem;
-}
+
 .contact-icons{
     display: flex;
     flex-direction: column;
@@ -42,4 +40,76 @@
 .icon-element:hover{
     color:0 0 15px 5px rgba(255, 255, 255, 0.287) ;
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.287);
+}
+@media screen and (max-width: 1080px) {
+    .contact-head{
+        font-size: medium;
+    }
+    .contact-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-icons{
+        margin: 5px 10px;
+        margin-left: 5vw;
+        margin-top:0;
+        flex-direction: row;
+        order: 1;
+    }
+    #contact-para{
+        /*display: none;*/
+        font-size: 20px;
+        margin:5px 5px;
+    }
+    .Yash-contact{
+        max-height: 120vh; /* Ensure the section covers the full viewport height */
+        overflow: visible;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+
+    }
+}
+@media screen and (max-width: 720px) {
+    #contact-head{
+        font-size: 4rem;
+    }
+    .contact-items{
+        flex-direction: column;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .contact-icons{
+        margin: 5px 10px;
+        margin-left: 5vw;
+        margin-top:0;
+        flex-direction: row;
+        order: 1;
+    }
+    .contact-text{
+        width: 90vw;
+        align-self: center;
+    }
+    #contact-para{
+        /*display: none;*/
+        font-size: 1rem;
+        margin: 5px 5px;
+        align-self: center;
+        max-width: 100%; /* Set width to 90vw */
+    }
+    .Yash-contact{
+        max-height: 150vh; /* Ensure the section covers the full viewport height */
+        overflow: visible;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+        width: 100vw;
+    }
+    .box{
+        width: 90%;
+    }
 }

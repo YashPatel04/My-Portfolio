@@ -4,7 +4,7 @@ import India from '../img/india.png';
 import Canada from '../img/canada.png';
 import US from '../img/United_States.png';
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 gsap.defaults({ease: "none"});
@@ -38,7 +38,6 @@ function Timeline() {
       })
       .set(".ball01", { autoAlpha: 1 }) 
       .to(".ball01", { duration: 0, autoAlpha: 1 })
-      .from(".ball01", { duration: 0, autoAlpha: 1 })
       .to(
         ".ball01",
         {
