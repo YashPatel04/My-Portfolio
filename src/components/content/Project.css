@@ -28,18 +28,57 @@
     animation-name: fade-img;
     animation-duration: 2s;
 }
-#pi-1 .project-card {
-    width: 29.8vw;
-    margin-bottom: 0;
+@media screen and (min-width:1024px) {
+    #pi-1 .project-card {
+        width: 29.8vw;
+        margin-bottom: 0;
+    }
+    #pi-1  .project-card img{
+        width: 29.8vw;
+    }
+    #pi-2 .project-card{
+        width: 19.6vw;
+        margin-top: 0;
+    }
+    #pi-2 .project-card img{
+        width: 19.6vw;
+        height: 23vh;
+    }
 }
-#pi-1  .project-card img{
-    width: 29.8vw;
+
+@media only screen and (max-width: 1024px) {
+    .project-cont{
+        flex-direction: column;
+        border: 2px solid black;
+    }
+    .project-item{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .project-card {
+        width: 49.8vw;
+        height: auto;
+        margin:.5rem;
+    }
+    .project-card img{
+        width: 49.8vw;
+        height: auto;
+    }
+    .project-text{
+        font-size: 1rem;
+    }
 }
-#pi-2 .project-card{
-    width: 19.6vw;
-    margin-top: 0;
-}
-#pi-2 .project-card img{
-    width: 19.6vw;
-    height: 23vh;
+@media only screen and (max-width: 720px) {
+    .project-card{
+        width: 85vw;
+        margin: 5px 0;
+    }
+    .project-card img{
+        width: 85vw;
+        height: auto;
+    }
+    ul{
+        padding:0;
+    }
 }
