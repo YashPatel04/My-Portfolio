@@ -21,7 +21,7 @@
 }
 .skills-card span{
     font-family: "DM Serif Text", sans-serif;
-    font-size: 1vw;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -41,4 +41,9 @@
     width: 2.4rem;
     height: auto;
     object-fit: contain;
+}
+@media (max-width: 1024px){
+    .skills-card span{
+        font-size: 0.8rem;
+    }
 }
