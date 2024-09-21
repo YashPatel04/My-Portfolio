@@ -25,7 +25,8 @@ function Intro() {
             Hello I'm Yash,
         </section>
         <section className='intro-item' id='changing-text'>
-            <span>A</span>
+          <span id='a'>A</span>
+          <section className='change'>
             <Typewriter
                 options=
                 {   
@@ -39,6 +40,9 @@ function Intro() {
                     }
                 }
             />
+            </section>
+            <span className='intro-hide'>A CS Major & Software Developer</span>
+            
         </section>
         <section id='intro-para' className='intro-item'>
             <p>
