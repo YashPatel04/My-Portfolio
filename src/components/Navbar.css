@@ -18,3 +18,8 @@
 body {
     margin-top: 60px; /* Adjust this value based on the height of your nav-bar */
 }
+@media screen and (max-width:500px) {
+    #bar{
+        display:none;
+    }
+  }
