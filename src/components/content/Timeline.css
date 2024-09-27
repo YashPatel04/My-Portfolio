@@ -60,7 +60,7 @@
   display: none;
 }
 }
-@media screen and (max-height: 1030px)  {
+/*@media screen and (max-height: 1030px)  {
   .line-par:nth-child(3) {
     margin-left: 72vw;
     margin-top: 40vh;
@@ -89,9 +89,9 @@
     width: 30vw;
     text-align: left;
     height: auto;
-    z-index: 2; /* Ensure the text is in front of the SVG */
-    margin: 1rem 1rem; /* Add vertical margin */
-    padding: 0.5rem; /* Add padding inside the text elements */
+    z-index: 2; 
+    margin: 1rem 1rem; 
+    padding: 0.5rem; 
   }
   .year{
     font-family: "Bebas Neue", sans-serif;
@@ -100,7 +100,7 @@
     margin: 0 1rem ;
     font-size: 2rem;
   }
-}
+}*/
 @media screen and (max-width:800px) {
   .Textline > svg {
     display: none;
@@ -128,7 +128,7 @@
     font-size: 2rem;
   }
 }
-@media screen and (max-width:1079px) {
+@media screen and (max-width:500px) {
   .Textline > svg {
     display: none;
   }
@@ -140,7 +140,7 @@
     font-family: 'SUSE', sans-serif;
     font-size: 1.1rem;
     color: white;
-    width: 30vw;
+    width: 90vw;
     text-align: left;
     height: auto;
     z-index: 2; /* Ensure the text is in front of the SVG */
