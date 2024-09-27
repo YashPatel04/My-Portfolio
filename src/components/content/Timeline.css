@@ -60,7 +60,21 @@
   display: none;
 }
 }
-@media screen and (max-width:1079px) {
+@media screen and (max-height: 1030px)  {
+  .line-par:nth-child(3) {
+    margin-left: 72vw;
+    margin-top: 40vh;
+  }
+  .line-par:nth-child(5) {
+    margin-left: 72vw;
+    margin-top: 85vh;
+  }
+  .line-par:nth-child(7) {
+    margin-left: 72vw;
+    margin-top: 130vh;
+  }
+}
+@media screen and (max-width:1079px){
   .Textline > svg {
     display: none;
   }
@@ -126,7 +140,7 @@
     font-family: 'SUSE', sans-serif;
     font-size: 1.1rem;
     color: white;
-    width: 90vw;
+    width: 30vw;
     text-align: left;
     height: auto;
     z-index: 2; /* Ensure the text is in front of the SVG */
