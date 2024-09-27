@@ -8,6 +8,9 @@
     margin: 1.5% 0.5%;
     padding: 1.5% 0.5%;
 }
+.intro-hide{
+    display: none;
+}
 .intro-item{
     font-family: 'Bebas Neue', sans-serif;
     color:rgb(209, 213, 219);
@@ -33,5 +36,78 @@
     }
     .intro-para{
         max-width: 73vw;
+    }
+}
+@media screen and (max-width:1310px) {
+    .intro-item{
+        font-size: 6rem;
+    }
+    #intro-para{
+        font-size:1.45rem;
+    }
+   
+}
+@media screen and (max-width:960px) {
+    .intro-item{
+        font-size: 4.5rem;
+    }
+    #intro-para{
+        font-size:1.15rem;
+    }
+    #introItem1{
+        margin-top: 22vh;
+    }
+}
+@media screen and (max-width:720px) {
+    .intro-item{
+        font-size: 4rem;
+    }
+    #intro-para{
+        font-size:1.15rem;
+    }
+    #introItem1{
+        margin-top: 22vh;
+    }
+}
+@media screen and (max-width:640px) {
+    .intro-item{
+        font-size: 3.5rem;
+    }
+    #intro-para{
+        font-size:1.35rem;
+    }
+    #introItem1{
+        margin-top:10vh;
+    }
+    .change{
+        display: none;
+    }
+    .intro-hide{
+        display:block;
+        text-align: left;
+    }
+    #a{
+        display:none;
+    }
+}
+@media screen and (max-height:670px) {
+    .intro-item{
+        font-size: 3.05rem;
+    }
+    #intro-para{
+        font-size:1.15rem;
+    }
+    #introItem1{
+        margin-top:10vh;
+    }
+    .change{
+        display: none;
+    }
+    .intro-hide{
+        display:block;
+        text-align: left;
+    }
+    #a{
+        display:none;
     }
 }

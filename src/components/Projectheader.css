@@ -20,3 +20,8 @@
     margin-right:5px;
     margin-left:5px;
 }
+@media only screen and (max-width: 720px) {
+    .header-child{
+        font-size: 55px;
+    }
+}

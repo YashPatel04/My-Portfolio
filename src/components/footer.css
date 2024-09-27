@@ -47,3 +47,8 @@ position: fixed;
 .foot-item:hover{
     color:whitesmoke;
 }
+@media screen and (max-width:540px) {
+    #footer{
+        display: none;
+    }
+}

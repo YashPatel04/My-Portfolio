@@ -13,7 +13,6 @@ const Projectcard = ({title, imag, link, text})=>{
                 <p className='project-text'>{text}</p>
                 <button onClick={handleClick} id='gh-submit'>GitHub</button>
             </div>
-            
         </div>
     );
 };

@@ -29,7 +29,7 @@
     margin:5%;
     margin-left:10%;
     width: 40vw;
-    
+    min-height:70vh;
     overflow: hidden;
     text-decoration: none;
     padding:1%;
@@ -66,4 +66,33 @@ input:focus, textarea:focus {
 #submit:disabled {
     background-color: rgb(133, 127, 127);
     cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+@media screen and (max-width: 1080px) {
+    .form-container{
+        width:auto;
+        height: auto;
+        padding-bottom:0;
+        margin-bottom: 0;
+    }
+    .box{
+        width:42vw;
+    }
+    #submit{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .form-container{
+        width:90%;
+        height: auto;
+        padding-bottom:0;
+        margin: 0;
+    }
+    .box{
+        width:100%;
+    }
+    #submit{
+        align-self: center;
+        margin-bottom: 5px;;
+    }
 }
