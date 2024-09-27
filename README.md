@@ -3,14 +3,15 @@
 This project is a personal portfolio website developed using React, showcasing various projects and skills. It includes sections for an introduction, projects, skills, and contact information.
 
 ## Table of Contents
-- Description
-- Installation
-- Usage
-- Features
-- Contributing
-- License
-- Contact
 
+1.  [Description](#description)
+2.  [Installation](#installation)
+3.  [Usage](#usage)
+4.  [Features](#features)
+5.  [Contribution](#contribution)
+6.  [License](#license)
+7.  [Contact](#contact)
+   
 ## Description
 This repository contains the source code for my personal portfolio website. The website is designed to provide a professional and clean presentation of my work and skills. It includes interactive elements and a responsive design to ensure a great user experience on all devices.
 
@@ -45,8 +46,7 @@ The website includes several sections:
 ## Features
 - **Responsive Design**: The website is fully responsive, ensuring a great user experience on all devices.
 - **Interactive Elements**: Includes various interactive elements to enhance user engagement.
-- **Project Showcase**: Detailed presentation of projects with descriptions, technologies used, and links to live demos or repositories.
-
+- **GSAP Animation**: The website uses GreenSock's ScrollTrigger to provide smooth animations to the user
 ## Contributing
 I welcome contributions to improve the website. To contribute:
 
