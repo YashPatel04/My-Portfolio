@@ -80,11 +80,11 @@ function Timeline() {
             
             </svg>
                   <span className='year'>2022</span>
-                  <span className='line-par'>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos donec parturient id netus accumsan. Iaculis maximus convallis pellentesque torquent pretium tortor egestas ligula. Non massa lacinia bibendum ac malesuada eros iaculis curabitur. Inceptos aenean pharetra accumsan turpis eu magnis habitant sapien</span>
+                  <span className='line-par'>In 2022, I graduated from high school in India and embarked on an adventurous trekking expedition, which taught me the importance of resilience and teamwork. Alongside this, I earned certifications in Python, C, and C++, laying the foundation for my journey in Computer Science.</span>
                   <span className='year'>2023</span>
-                  <span className='line-par'>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos donec parturient id netus accumsan. Iaculis maximus convallis pellentesque torquent pretium tortor egestas ligula. Non massa lacinia bibendum ac malesuada eros iaculis curabitur. Inceptos aenean pharetra accumsan turpis eu magnis habitant sapien</span>
+                  <span className='line-par'>In 2023, I completed my freshman year at Dalhousie University in Canada, where I started exploring my passion for programming and problem-solving. I also gained valuable work experience as a varsity game staff member and a retail sales associates, learning how to manage responsibilities in a fast-paced environment.</span>
                   <span className='year'>2024</span>
-                  <span className='line-par'>Lorem ipsum odor amet, consectetuer adipiscing elit. Inceptos donec parturient id netus accumsan. Iaculis maximus convallis pellentesque torquent pretium tortor egestas ligula. Non massa lacinia bibendum ac malesuada eros iaculis curabitur. Inceptos aenean pharetra accumsan turpis eu magnis habitant sapien</span>
+                  <span className='line-par'>2024 is a year of change and growth. I transferred to Stetson University to continue my Computer Science studies and settled into a new environment. I spent the summer volunteering at my uncle’s gas station, where I learned the inner workings of running a business and gained hands-on experience in logistics. This year, I also focused on expanding my skills in web development and Data strutures and algorithms using Java.</span>
       </div>
     </div>
   );

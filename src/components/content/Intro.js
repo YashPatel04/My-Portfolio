@@ -46,7 +46,7 @@ function Intro() {
         </section>
         <section id='intro-para' className='intro-item'>
             <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia ultrices duis molestie bibendum phasellus. Nascetur pulvinar posuere euismod feugiat ridiculus vel sagittis nascetur. Consequat aptent litora nulla erat; placerat elementum ultricies donec. Magnis justo nisl ullamcorper hac fermentum feugiat est.</p>
+            I'm a Computer Science student with a passion for coding and solving problems through technology. I enjoy working on projects that challenge me to think creatively, whether it's building web apps with React or developing solutions in Java. I'm always eager to collaborate, because teamwork makes the dream work. And hey, if there's a bug, it's just a feature waiting to be fixed!</p>
         </section>
       </section>
     </div>

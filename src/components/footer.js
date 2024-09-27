@@ -13,7 +13,7 @@ function Footer() {
         <Link className='foot-item' target='_blank' to='https://www.linkedin.com/in/yashpatel2004/' >LinkedIn</Link>
         <Link className='foot-item' target='_blank' to='https://github.com/YashPatel04' >GitHub</Link>
         <Link className='foot-item' target='_blank' to='mailto:ypatel2@stetson.edu' >Email</Link>
-        <Link className='foot-item' target='_blank' to='' >Resume</Link>
+        <Link className='foot-item' target='_blank' to='https://drive.google.com/file/d/1a6a4f9QYxqyPpY4Aet3BfI5eK0nzK9WL'>Resume</Link>
       </section>
     </div>
   )

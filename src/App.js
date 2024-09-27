@@ -68,12 +68,13 @@ function App() {
           <div id='ypps-3'><Skills className='Yash-skills' /></div>
           <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>
           <div id='ypps-5' className='contact-sec'><Contact /></div>
-          <Routes></Routes>
+          <Routes>
+          </Routes>
           <div className='Yash-footer'><Footer /></div>
         </Router>
       </>
     </div>
   );
-}
+} 
 
 export default App;
