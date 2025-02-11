@@ -10,6 +10,8 @@ function Intro() {
         'Web Designer',
         'Web Developer',
         'Tech Enthusiast',
+        'Cloud Developer',
+        'Graphic Designer',
         'N Open Source Enthusiast'
       ];
     
@@ -45,8 +47,7 @@ function Intro() {
             
         </section>
         <section id='intro-para' className='intro-item'>
-            <p>
-            I'm a Computer Science student with a passion for coding and solving problems through technology. I enjoy working on projects that challenge me to think creatively, whether it's building web apps with React or developing solutions in Java. I'm always eager to collaborate, because teamwork makes the dream work. And hey, if there's a bug, it's just a feature waiting to be fixed!</p>
+            <p>I'm a Computer Science student fluent in Java, React, and the art of turning caffeine into code. I enjoy working on projects that challenge me to think creatively, whether it's building web apps with React or developing solutions in Java. I'm always eager to collaborate, because teamwork makes the dream work I'm also a firm believer that the best way to debug is with a rubber duck and a sense of humor.</p>
         </section>
       </section>
     </div>

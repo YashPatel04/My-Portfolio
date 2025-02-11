@@ -155,3 +155,133 @@
     font-size: 2rem;
   }
 }
+
+.timeline-container {
+  padding: 4rem 2rem;
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #64ffda;
+  left: 20%; /* Move line to the left */
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 6rem 0;
+  width: 70%; /* Increased width for right-aligned content */
+  padding-left: 3rem;
+  opacity: 0;
+  left: 20%; /* Align with the line */
+}
+
+.timeline-dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #64ffda;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+  left: -8.5px; /* Center dot on line */
+  top: 20px;
+  box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+.timeline-content {
+  background: rgba(100, 255, 218, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #64ffda;
+  backdrop-filter: blur(4px);
+}
+
+.timeline-content h3 {
+  color: #64ffda; /* Add color for headings */
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  color: white; /* Add color for paragraph text */
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Remove odd/even specific styles since all items are on right */
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+  padding-left: 3rem;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .timeline-line {
+    display: none; /* Hide the line */
+  }
+
+  .timeline-dot {
+    display: none; /* Hide the dots */
+  }
+
+  .timeline-container {
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .timeline {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 90%; /* Reduced from 100% */
+    left: 0;
+    padding: 0;
+    margin: 1.5rem auto; /* Changed to auto for better centering */
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-content {
+    width: 100%; /* Changed from 90% */
+    max-width: 450px; /* Reduced from 500px */
+    padding: 1.25rem;
+  }
+}
+
+/* Additional mobile breakpoint for smaller screens */
+@media (max-width: 500px) {
+  .timeline-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .timeline-item {
+    width: 85%; /* Further reduced for smaller screens */
+    margin: 1rem auto;
+  }
+
+  .timeline-content {
+    width: 100%;
+    max-width: 320px; /* Further reduced for iPhone screens */
+    padding: 1rem;
+  }
+}
