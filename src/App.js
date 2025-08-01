@@ -14,6 +14,7 @@ import Project from './components/content/Project';
 import Projectheader from './components/Projectheader';
 import Contact from './components/content/contact.js';
 import ParticlesBg from './ParticlesBg.js';
+import { Analytics } from "@vercel/analytics/react"
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
   return (
     <div className="App">
       <SpeedInsights/>
+      <Analytics/>
       <div className="bg-blur"></div>
       <ParticlesBg/>
       <>
