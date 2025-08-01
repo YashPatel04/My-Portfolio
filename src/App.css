@@ -2,6 +2,7 @@ html {
   text-align: center;
   overflow: hidden; /* Hide the scrollbar */
   overflow-y:scroll; /* Allow vertical scrolling */
+  background-image: url('./components/img/p2.jpg'); 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   background-size: cover; /* Scale the image to cover the entire background */
