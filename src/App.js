@@ -13,6 +13,7 @@ import Skills from './components/content/Skills';
 import Project from './components/content/Project';
 import Projectheader from './components/Projectheader';
 import Contact from './components/content/contact.js';
+import ParticlesBg from './ParticlesBg.js';
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {
@@ -61,10 +62,12 @@ function App() {
   return (
     <div className="App">
       <SpeedInsights/>
+      <div className="bg-blur"></div>
+      <ParticlesBg/>
       <>
         <Router>
           <Navbar />
-          <div ref={introRef}  className='Yash-Intro'><Intro /></div>
+          <div ref={introRef} className='Yash-Intro'><Intro /></div>
           <div id='ypps-1' className='Yash-Time'><Timeline /></div>
           <div id='ypps-3'><Skills className='Yash-skills' /></div>
           <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>

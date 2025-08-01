@@ -13,20 +13,20 @@ function Timeline() {
       gsap.fromTo(item,
         {
           opacity: 0,
-          y: 50
+          x: 80 // Start from right
         },
         {
           scrollTrigger: {
-        trigger: item,
-        start: "top center+=100",
-        end: "bottom center",
-        toggleActions: "play none none reverse"
+            trigger: item,
+            start: "top center+=100",
+            end: "bottom center",
+            toggleActions: "play none none reverse"
           },
           opacity: 1,
-          y: 0,
-          duration: 0.6,
+          x: 0,
+          duration: 0.7,
           ease: "power3.out",
-          delay: index * 0.2
+          delay: index * 0.18 // Stagger effect
         }
       );
     });
@@ -73,7 +73,7 @@ function Timeline() {
           <div className="timeline-dot"></div>
           <div className="timeline-content">
             <h3>2025</h3>
-            <p>This year I am learning new technologies, working exciting projects using tech like AWS developer tools, websockets and django. I am also actively searching for internships to gain practical experience in the field of software development and enhance my skills.</p>
+            <p>This year, I’m diving deep into new technologies like AWS developer tools, WebSockets, and Django, applying them to hands-on projects—including a digital signage web app built for Raspberry Pi using a modern full-stack setup. I’m focusing on scalable backend development, real-time communication systems, and cloud-based deployment strategies. Alongside my technical growth, I’m actively seeking software development internships to gain industry experience and further sharpen my programming skills in real-world environments.</p>
           </div>
         </div>
       </div>

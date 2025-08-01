@@ -1,42 +1,56 @@
 export const SKILLS = [
-{ 
-    title:"Frontend",
-    icon: "./img/frontend.png", 
+  {
+    title: "Frontend",
+    icon: "./img/frontend.png",
     skills: [
-    { skill: "HTML5", percentage: "80%" },
-    { skill: "CSS3 (Sass/SCSS)", percentage: "80%" }, 
-    { skill: "JavaScript", percentage: "75%" },
-    { skill: "React.js", percentage: "80%" },
+      { skill: "HTML5", percentage: "80%" },
+      { skill: "CSS3 (Sass/SCSS)", percentage: "80%" },
+      { skill: "JavaScript", percentage: "75%" },
+      { skill: "React.js", percentage: "80%" },
+      { skill: "Tailwind CSS", percentage: "85%" },
+      { skill: "Framer Motion", percentage: "70%" },
+      { skill: "React Router", percentage: "75%" },
+      { skill: "Shadcn UI", percentage: "80%" },
     ],
-},
-{
+  },
+  {
     title: "Backend",
-    icon: "./assets/images/backend.png", 
+    icon: "./assets/images/backend.png",
     skills: [
-    { skill: "Node.js", percentage: "70%" }, 
-    { skill: "Express.js", percentage: "65%" },
-    { skill: "Java", percentage: "90%" },
-    { skill: "C++", percentage: "65%" },
-    { skill: "Python", percentage: "85%" },
+      { skill: "Node.js", percentage: "70%" },
+      { skill: "Express.js", percentage: "65%" },
+      { skill: "Java", percentage: "90%" },
+      { skill: "C++", percentage: "65%" },
+      { skill: "Python", percentage: "85%" },
+      { skill: "Django", percentage: "80%" },
+      { skill: "Django REST Framework", percentage: "75%" },
+      { skill: "WebSockets / Django Channels", percentage: "70%" },
     ],
-},
-{
+  },
+  {
     title: "Dev Tools",
-    icon: "./assets/images/tools-icon.png", skills: [
-    { skill: "Git & GitHub", percentage: "85%" },
-    { skill: "Linux", percentage: "60%" },
-    { skill: "MySql & SQL databases", percentage: "80%" },
-    { skill: "Shell Scripting", percentage: "65%" },
-    { skill: "Vercel", percentage: "90%" },
+    icon: "./assets/images/tools-icon.png",
+    skills: [
+      { skill: "Git & GitHub", percentage: "85%" },
+      { skill: "Linux", percentage: "60%" },
+      { skill: "MySQL & SQL databases", percentage: "80%" },
+      { skill: "PostgreSQL", percentage: "75%" },
+      { skill: "Shell Scripting", percentage: "65%" },
+      { skill: "Docker", percentage: "70%" },
+      { skill: "AWS EC2/S3/RDS", percentage: "70%" },
+      { skill: "Vercel", percentage: "90%" },
+      { skill: "CloudFront & Boto3", percentage: "65%" },
     ],
-},
-{
+  },
+  {
     title: "Soft Skills",
-    icon: "./assets/images/tools-icon.png", skills: [
-    { skill: "Leadership", percentage: "90%" },
-    { skill: "Problem-solving", percentage: "80%" },
-    { skill: "Teamwork", percentage: "85%" },
-    { skill: "Attention to Detail", percentage: "80%" },
+    icon: "./assets/images/tools-icon.png",
+    skills: [
+      { skill: "Leadership", percentage: "90%" },
+      { skill: "Problem-solving", percentage: "80%" },
+      { skill: "Teamwork", percentage: "85%" },
+      { skill: "Attention to Detail", percentage: "80%" },
+      { skill: "Communication", percentage: "80%" },
     ],
-},
-]
+  },
+];

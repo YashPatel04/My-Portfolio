@@ -47,7 +47,7 @@ function Intro() {
             
         </section>
         <section id='intro-para' className='intro-item'>
-            <p>I'm a Computer Science student fluent in Java, React, and the art of turning caffeine into code. I enjoy working on projects that challenge me to think creatively, whether it's building web apps with React or developing solutions in Java. I'm always eager to collaborate, because teamwork makes the dream work I'm also a firm believer that the best way to debug is with a rubber duck and a sense of humor.</p>
+            <p>I’m a Computer Science student, problem-solver at heart who loves turning ideas into real, working software. From digital signage to expense tracking apps, I create things that solve everyday problems using tools like React, Django, and Java. Always learning, always building, and currently hunting for an internship to level up and make an impact.</p>
         </section>
       </section>
     </div>

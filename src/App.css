@@ -25,3 +25,16 @@ html {
   min-height: 100vh;
   width: auto;
 }
+
+/* Blurred background image */
+.bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: url('./components/img/p2.jpg') center center/cover no-repeat;
+    filter: blur(16px) brightness(0.7);
+    pointer-events: none;
+}
