@@ -14,7 +14,9 @@ import Project from './components/content/Project';
 import Projectheader from './components/Projectheader';
 import Contact from './components/content/contact.js';
 import ParticlesBg from './ParticlesBg.js';
+import Resume from './components/Resume.js'; 
 import { Analytics } from "@vercel/analytics/react"
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 function App() {
@@ -45,13 +47,13 @@ function App() {
     });
     gsap.to(".Yash-footer", {
       scrollTrigger: {
-        trigger: ".contact-sec",    // Trigger when the contact section comes into view
-        start: "top center",        // Start the animation when the top of the contact section hits the center of the viewport
-        end: "bottom center",       // End when the bottom of the contact section hits the center of the viewport
-        scrub: true,                // Smooth transition as the user scrolls
-        toggleActions: "play none none reverse",  // Ensure the animation reverses when scrolling back up
-        onEnter: () => gsap.to(".Yash-footer", { opacity: 0, visibility: "hidden", duration: 0.5 }), // Hide footer with visibility
-        onLeaveBack: () => gsap.to(".Yash-footer", { opacity: 1, visibility: "visible", duration: 0.5 }) // Show footer
+        trigger: ".contact-sec",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        toggleActions: "play none none reverse",
+        onEnter: () => gsap.to(".Yash-footer", { opacity: 0, visibility: "hidden", duration: 0.5 }),
+        onLeaveBack: () => gsap.to(".Yash-footer", { opacity: 1, visibility: "visible", duration: 0.5 })
       }
     });
     
@@ -60,25 +62,31 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  // Homepage component
+  const HomePage = () => (
+    <>
+      <div ref={introRef} className='Yash-Intro'><Intro /></div>
+      <div id='ypps-1' className='Yash-Time'><Timeline /></div>
+      <div id='ypps-3'><Skills className='Yash-skills' /></div>
+      <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>
+      <div id='ypps-5' className='contact-sec'><Contact /></div>
+      <div className='Yash-footer'><Footer /></div>
+    </>
+  );
+
   return (
     <div className="App">
       <SpeedInsights/>
       <Analytics/>
       <div className="bg-blur"></div>
       <ParticlesBg/>
-      <>
-        <Router>
-          <Navbar />
-          <div ref={introRef} className='Yash-Intro'><Intro /></div>
-          <div id='ypps-1' className='Yash-Time'><Timeline /></div>
-          <div id='ypps-3'><Skills className='Yash-skills' /></div>
-          <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>
-          <div id='ypps-5' className='contact-sec'><Contact /></div>
-          <Routes>
-          </Routes>
-          <div className='Yash-footer'><Footer /></div>
-        </Router>
-      </>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </Router>
     </div>
   );
 } 

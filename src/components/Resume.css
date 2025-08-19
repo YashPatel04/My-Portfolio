@@ -1,0 +1,40 @@
+
+/* Loading state */
+.pdf-viewer iframe[src=""] {
+  background: #0a192f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-viewer iframe[src=""]:before {
+  content: "Loading Resume...";
+  color: #64ffda;
+  font-family: 'SUSE', sans-serif;
+  font-size: 1.2rem;
+}
+
+.fullscreen-pdf-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: white;
+  overflow: hidden;
+}
+
+.fullscreen-pdf-viewer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* Remove any potential margins or padding */
+body.resume-page {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
