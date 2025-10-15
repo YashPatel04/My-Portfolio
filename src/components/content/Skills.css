@@ -1,169 +1,251 @@
-.Skills-container{
-    margin: 4rem 5.5%;
-    position: relative;
-    color:whitesmoke;
-    font-family: "Noto Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
+.Skills-container {
+  margin: 4rem 5.5%;
+  position: relative;
+  color: whitesmoke;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-}
 .skills-heading {
-    opacity: 1;
-    align-self: center;
-    width: 200px;
-    text-align: center;
-    position: relative;
-    margin: 1rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  opacity: 1;
+  align-self: center;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 .Skills-container h1 {
-    top:0;
-    margin:0;
-    text-align: center;
-    color:rgba(255, 255, 255, 0.233);   
-    position: relative;
-    font-family: "DM Serif Text", sans-serif;
-    font-weight: 600;
-    font-size: 3rem;
-    z-index: -1;
-    
+  top: 0;
+  margin: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.777);
+  position: relative;
+  font-family: "DM Serif Text", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  z-index: -1;
 }
 
 .Skills-container h5 {
-    position: absolute;
-    margin: 0;
-    font-size: 1.45vw;
-    font-family: "DM Serif Text", sans-serif;
-    font-weight: 600;
-    z-index: 2;
+  position: absolute;
+  margin: 0;
+  font-size: 1.45vw;
+  font-family: "DM Serif Text", sans-serif;
+  font-weight: 600;
+  z-index: 2;
 }
-.Skills-content{
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-}
-.skills{
-    flex:1;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-.skills-info{
-    flex:1;
-}
-@media (min-width: 1026px){
-    .skills-info-content{
-        min-height: 60vh;
-    }
-}
-@media (max-width: 1025px){
-    .skills-info-card h6 {
-        font-size: 3rem;
-    }
-    .skills-info-content{
-        min-height: 55vh;
-    }
-    
-    .skills-info-content{
-        padding: 1.5rem;
-    }
-    .Skills-container h1 {
-        top:0;
-        margin:0;
-        text-align: center;
-        color:rgba(255, 255, 255, 0.233);
-        position: relative;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        font-size: 3rem;
-        z-index: -1;
-        
-    }
-    .Skills-container h5 {
-        position: absolute;
-        margin: 0;
-        font-size:1.5rem;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        z-index: 2;
-    }
-}
-@media (max-width: 768px){
-    .Skills-content{
-        flex-direction: column-reverse;
-        gap:3rem;
-    }
-    
-    .skills,
-    .skills-info{
-        width: 100%;
-    }
-    .Skills-container h5{
-        margin-bottom: 2rem;
-    }
-    .Skills-container::after,
-    .Skills-container::before{
-        width: 18rem;
-        height: 18rem;
-    }
-    .Skills-container h1 {
-        top:0;
-        margin:0;
-        text-align: center;
-        color:rgba(255, 255, 255, 0.233);
-        position: relative;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        font-size: 3rem;
-        z-index: -1;
-        
-    }
-    
-    .Skills-container h5 {
-        position: absolute;
-        margin: 0;
-        font-size:1.5rem;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        z-index: 2;
-    }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
-@media (max-width: 600px){
-    .Skills-container{
-        padding:0;
-    }
-    .Skills-container h1 {
-        top:0;
-        margin:0;
-        text-align: center;
-        color:rgba(255, 255, 255, 0.233);
-        position: relative;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        font-size: 3rem;
-        z-index: -1;
-        
-    }
-    
-    .Skills-container h5 {
-        position: absolute;
-        margin: 0;
-        font-size:1.5rem;
-        font-family: "DM Serif Text", sans-serif;
-        font-weight: 600;
-        z-index: 2;
-    }
+
+.skills-grid.visible {
+  opacity: 1;
+}
+
+.skill-category {
+  background: linear-gradient(
+    135deg,
+    rgba(40, 36, 56, 0.7) 0%,
+    rgba(30, 27, 45, 0.85) 100%
+  );
+  border: 1.5px solid rgba(100, 255, 218, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(100, 255, 218, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.skill-category:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px 0 rgba(100, 255, 218, 0.2);
+  border-color: rgba(100, 255, 218, 0.5);
+}
+
+.category-title {
+  color: #64ffda;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(100, 255, 218, 0.3);
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.4s ease-out forwards;
+  transition: transform 0.2s ease;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+}
+
+.tech-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(100, 255, 218, 0.05);
+  border-radius: 12px;
+  padding: 0.75rem;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tech-item:hover .tech-icon-wrapper {
+  background: rgba(100, 255, 218, 0.15);
+  box-shadow: 0 4px 20px rgba(100, 255, 218, 0.3);
+}
+
+.tech-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.tech-name {
+  color: #e7e6f7;
+  font-family: "SUSE", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.9;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1025px) {
+  .Skills-container h5 {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Skills-container {
+    margin: 3rem 4%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .category-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .tech-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Skills-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .Skills-container h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Skills-container {
+    margin: 2rem 3%;
+  }
+
+  .skill-category {
+    padding: 1.25rem;
+  }
+
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-icon-wrapper {
+    width: 45px;
+    height: 45px;
+    padding: 0.5rem;
+  }
+
+  .tech-name {
+    font-size: 0.75rem;
+  }
+
+  .Skills-container h1 {
+    font-size: 2rem;
+  }
+
+  .Skills-container h5 {
+    font-size: 1rem;
+  }
 }
 .slide-in-left,
 .slide-in-right {
   opacity: 0;
   transform: translateX(0);
-  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .slide-in-left.visible {
@@ -177,7 +259,8 @@
 .slide-in-right {
   opacity: 0;
   transform: translateX(60px);
-  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .slide-in-right.visible {

@@ -6,7 +6,7 @@ function Menu() {
   return (
     <div id='bar'>   
       <ScrollLink className='bar-item' to='ypps-1' smooth={true} duration={500}>
-        About
+        Experience
       </ScrollLink>
       <ScrollLink className='bar-item' to='ypps-3' smooth={true} duration={500}>
         Skills
