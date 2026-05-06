@@ -9,12 +9,12 @@ import Timeline from './components/content/Timeline';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import Skills from './components/content/Skills';
+import Research from './components/content/Research';
 import Project from './components/content/Project';
 import Projectheader from './components/Projectheader';
-import Contact from './components/content/contact.js';
-import ParticlesBg from './ParticlesBg.js';
-import Resume from './components/Resume.js'; 
+import Contact from './components/content/contact.jsx';
+import ParticlesBg from './ParticlesBg.jsx';
+import Resume from './components/Resume.jsx'; 
 import { Analytics } from "@vercel/analytics/react"
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -56,6 +56,72 @@ function App() {
         onLeaveBack: () => gsap.to(".Yash-footer", { opacity: 1, visibility: "visible", duration: 0.5 })
       }
     });
+
+    // // Skills fade in animation
+    // gsap.fromTo("#ypps-3", {
+    //   y: -100,
+    //   opacity: 0
+    // }, {
+    //   scrollTrigger: {
+    //     trigger: "#ypps-3",
+    //     start: "top top",
+    //     end: "bottom top",
+    //     scrub: 1.2,
+    //     pin: true,
+    //     pinSpacing: true,
+    //     markers: false
+    //   },
+    //   y: 0,
+    //   opacity: 1,
+    //   duration: 1
+    // });
+
+    // // Projects fade in animation
+    // gsap.fromTo(".app-projects", {
+    //   y: -100,
+    //   opacity: 0
+    // }, {
+    //   scrollTrigger: {
+    //     trigger: ".app-projects",
+    //     start: "top top",
+    //     end: "bottom top",
+    //     scrub: 1.2,
+    //     pin: true,
+    //     pinSpacing: true,
+    //     markers: false
+    //   },
+    //   y: 0,
+    //   opacity: 1,
+    //   duration: 1
+    // });
+
+    // Contact fade in animation
+    gsap.fromTo(".contact-sec", {
+      opacity: 0.50,
+    }, {
+      scrollTrigger: {
+        trigger: ".contact-sec",
+        start: "top center",
+        end: "bottom top",
+        scrub: 1.2,
+        pin: true,
+        pinSpacing: true,
+        onEnter: (self) => {
+          const endValue = self.trigger.offsetTop + self.trigger.offsetHeight;
+          gsap.to(window, {
+            duration: 1.5,
+            ease: "power2.inOut",
+            onUpdate: function() {
+              window.scrollTo(0, endValue);
+            }
+          });
+        },
+        markers: false
+      },
+      y: 0,
+      opacity: 1,
+      duration: 1
+    });
     
   }, []);
   useEffect(() => {
@@ -67,7 +133,7 @@ function App() {
     <>
       <div ref={introRef} className='Yash-Intro'><Intro /></div>
       <div id='ypps-1' className='Yash-Time'><Timeline /></div>
-      <div id='ypps-3'><Skills className='Yash-skills' /></div>
+      <div id='ypps-3'><Research className='research-section' /></div>
       <div id='ypps-4' className='app-projects'><Projectheader /><Project /></div>
       <div id='ypps-5' className='contact-sec'><Contact /></div>
       <div className='Yash-footer'><Footer /></div>

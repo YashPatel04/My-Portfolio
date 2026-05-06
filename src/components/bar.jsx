@@ -9,7 +9,7 @@ function Menu() {
         Experience
       </ScrollLink>
       <ScrollLink className='bar-item' to='ypps-3' smooth={true} duration={500}>
-        Skills
+        Research
       </ScrollLink>
       <ScrollLink className='bar-item' to='ypps-4' smooth={true} duration={500}>
         Projects

@@ -32,6 +32,13 @@
   display: block;
 }
 
+.fullscreen-pdf-viewer .resume-pdf-object {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
 /* Remove any potential margins or padding */
 body.resume-page {
   margin: 0;

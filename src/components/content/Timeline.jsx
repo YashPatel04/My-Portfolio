@@ -40,7 +40,19 @@ function Timeline() {
     <div className="timeline-container">
       <div className="timeline">
         <div className="timeline-line"></div>
-        
+        <div className="timeline-item">
+          <div className="timeline-dot"></div>
+          <div className="timeline-content">
+            <div className="timeline-header">
+              <h3>TrendAI (Trend Micro Inc.)</h3>
+              <span className="timeline-date">June 2026 - August 2026</span>
+            </div>
+            <h4 className="timeline-role">Research & Development Intern · Austin, TX</h4>
+            <ul className="timeline-list">
+              <li>Selected to join the Research & Development team at Trend Micro, focusing on cybersecurity innovation and advanced threat detection.</li>
+            </ul>
+          </div>
+        </div>
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
