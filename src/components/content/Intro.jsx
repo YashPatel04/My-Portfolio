@@ -4,15 +4,17 @@ import Typewriter from 'typewriter-effect';
 
 function Intro() {
     const strings = [
-        'Software Developer', 
+        'Software Engineer',
+        'Git Commit Addict', 
         'Full Stack Developer',
         'Deans List Student',
-        'Web Designer',
+        'Byte-Sized Developer',
         'Web Developer',
-        'Tech Enthusiast',
         'Cloud Developer',
+        'API Wrangler',
         'Graphic Designer',
-        'N Open Source Enthusiast'
+        'N Open Source Enthusiast',
+        "Dark Mode Advocate"
       ];
     
       // Dynamically add regular spaces before each string
@@ -47,7 +49,7 @@ function Intro() {
             
         </section>
         <section id='intro-para' className='intro-item'>
-            <p>I’m a Computer Science student (Junior), problem-solver at heart who loves turning ideas into real, working software. From digital signage to expense tracking apps, I create things that solve everyday problems using tools like React, Django, and Java. Always learning, always building, and currently hunting for an internship to level up and make an impact.</p>
+              <p>I’m a Software Engineer, problem-solver at heart who loves turning ideas into real, working software. From digital signage to expense tracking apps, I create things that solve everyday problems using tools like React, Django, Java, or whatever gets the job done. If it involves code, design, or problem-solving, I'm in.</p>
         </section>
       </section>
     </div>

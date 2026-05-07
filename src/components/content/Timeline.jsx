@@ -58,7 +58,7 @@ function Timeline() {
           <div className="timeline-content">
             <div className="timeline-header">
               <h3>Stetson University (Capstone Proj.)</h3>
-              <span className="timeline-date">Aug 2025 – Present</span>
+              <span className="timeline-date">Aug 2025 – Dec 2025</span>
             </div>
             <h4 className="timeline-role">Software Engineer Intern · DeLand, FL</h4>
             <ul className="timeline-list">
@@ -69,7 +69,6 @@ function Timeline() {
             </ul>
           </div>
         </div>
-
         <div className="timeline-item">
           <div className="timeline-dot"></div>
           <div className="timeline-content">
@@ -86,26 +85,6 @@ function Timeline() {
               <li>Automated billing with Stripe, cutting 100% of manual invoicing overhead, reflecting a strong ownership mindset.</li>
               <li>Engineered secure media streaming with Socket.io and caching on Pi, achieving 99% uptime during network outages.</li>
               <li>Deployed backend services securely on a Linux-based EC2 instance, using firewall rules, rate limits, SSL encryption, and best security practices, supporting 500+ daily ad impressions across 5 stores.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="timeline-item">
-          <div className="timeline-dot"></div>
-          <div className="timeline-content">
-            <div className="timeline-header">
-              <h3>CliquePay</h3>
-              <span className="timeline-date">Jan 2025 – May 2025</span>
-            </div>
-            <h4 className="timeline-role">
-              Full Stack Engineer · 
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="timeline-link">GitHub Repo</a>
-            </h4>
-            <p className="timeline-tech">Django, React, AWS, MySQL</p>
-            <ul className="timeline-list">
-              <li>Built and deployed a React + Django full-stack finance app for group expense tracking; implemented scalable REST APIs and integrated AWS Cognito for authentication.</li>
-              <li>Optimized MySQL queries and reduced DB latency by 40% & built personal & group chats with WebSockets.</li>
-              <li>Deployed on AWS using Docker; collaborated in Agile sprints to ship production-ready features.</li>
             </ul>
           </div>
         </div>

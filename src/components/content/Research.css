@@ -20,31 +20,31 @@
 }
 
 .research-heading h1 {
-  color: #64ffda;
+  color: whitesmoke;
   font-size: 3rem;
   font-family: "DM Serif Text", sans-serif;
   letter-spacing: 2px;
-  text-shadow: 0 2px 8px #64ffda22;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
 .publications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  gap: 2rem;
   width: 100%;
-  max-width: 1450px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 2.5rem;
+  padding: 0 2rem;
 }
 
 .publication-card {
-  background: linear-gradient(120deg, rgba(40,36,56,0.82) 60%, rgba(100,255,218,0.13) 100%);
-  padding: 2.75rem 3rem;
-  border-radius: 20px;
-  border: 1.5px solid #64ffda;
-  box-shadow: 0 8px 40px 0 rgba(100,255,218,0.12), 0 2px 10px 0 #64ffda33;
-  backdrop-filter: blur(8px) saturate(140%);
+  background: linear-gradient(120deg, rgba(242,247,250,0.72) 60%, rgba(218,232,241,0.82) 100%);
+  padding: 2.25rem 2.4rem;
+  border-radius: 18px;
+  border: 1px solid rgba(24, 75, 99, 0.14);
+  box-shadow: 0 10px 30px 0 rgba(18, 49, 66, 0.10), 0 2px 10px 0 rgba(255,255,255,0.16);
+  backdrop-filter: blur(12px) saturate(125%);
   transition: box-shadow 0.22s, transform 0.22s;
   position: relative;
   overflow: hidden;
@@ -55,8 +55,8 @@
 }
 
 .publication-card:hover {
-  box-shadow: 0 12px 40px 0 rgba(100,255,218,0.18), 0 2px 12px 0 #64ffda55;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 14px 38px 0 rgba(18, 49, 66, 0.16), 0 2px 12px 0 rgba(255,255,255,0.32);
+  transform: translateY(-3px) scale(1.01);
 }
 
 .paper-header {
@@ -68,25 +68,25 @@
 }
 
 .paper-title {
-  color: #64ffda;
+  color: #184b63;
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
-  text-shadow: 0 2px 8px #64ffda22;
   flex: 1;
 }
 
 .paper-year {
-  color: #e7e6f7;
-  font-size: 1rem;
+  color: #f4f7fa;
+  font-size: 0.95rem;
   font-family: "SUSE", sans-serif;
-  background: rgba(100,255,218,0.1);
-  padding: 0.5rem 0.9rem;
+  background: rgba(24, 41, 58, 0.86);
+  border: 1px solid rgba(24, 41, 58, 0.24);
+  padding: 0.45rem 0.8rem;
   border-radius: 8px;
   white-space: nowrap;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .paper-meta {
@@ -95,33 +95,33 @@
 
 .paper-authors,
 .paper-journal {
-  color: #e7e6f7;
-  font-size: 1.05rem;
+  color: #243746;
+  font-size: 0.98rem;
   font-family: "SUSE", sans-serif;
   margin: 0.5rem 0;
-  opacity: 0.85;
+  opacity: 0.96;
 }
 
 .paper-authors strong,
 .paper-journal strong {
-  color: #64ffda;
+  color: #184b63;
   font-weight: 600;
 }
 
 .paper-description {
-  color: #e7e6f7;
-  font-size: 1.08rem;
+  color: #344a57;
+  font-size: 1rem;
   font-family: "SUSE", sans-serif;
-  line-height: 1.75;
-  margin: 1.25rem 0;
-  opacity: 0.9;
+  line-height: 1.65;
+  margin: 1rem 0;
+  opacity: 0.98;
   flex-grow: 1;
 }
 
 .paper-actions {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -131,44 +131,44 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.35rem;
+  padding: 0.7rem 1.2rem;
   border-radius: 8px;
   font-family: "SUSE", sans-serif;
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.22s;
-  border: 1.5px solid #64ffda;
+  border: 1px solid rgba(24, 75, 99, 0.2);
 }
 
 .doi-link {
-  background: rgba(100,255,218,0.1);
-  color: #64ffda;
+  background: rgba(24, 41, 58, 0.82);
+  color: #f4f7fa;
 }
 
 .doi-link:hover {
-  background: rgba(100,255,218,0.2);
-  box-shadow: 0 0 16px 2px rgba(100,255,218,0.3);
+  background: rgba(24, 41, 58, 0.94);
+  box-shadow: 0 0 16px 2px rgba(24, 41, 58, 0.16);
 }
 
 .github-link {
-  background: rgba(100,255,218,0.14);
-  color: #e7e6f7;
+  background: rgba(36, 55, 70, 0.82);
+  color: #f4f7fa;
 }
 
 .github-link:hover {
-  background: rgba(100,255,218,0.26);
-  box-shadow: 0 0 16px 2px rgba(100,255,218,0.35);
+  background: rgba(36, 55, 70, 0.94);
+  box-shadow: 0 0 16px 2px rgba(36, 55, 70, 0.16);
 }
 
 .pdf-view {
-  background: rgba(100,255,218,0.2);
-  color: #e7e6f7;
+  background: rgba(24, 41, 58, 0.82);
+  color: #f4f7fa;
 }
 
 .pdf-view:hover {
-  background: rgba(100,255,218,0.3);
-  box-shadow: 0 0 16px 2px rgba(100,255,218,0.4);
+  background: rgba(24, 41, 58, 0.94);
+  box-shadow: 0 0 16px 2px rgba(24, 41, 58, 0.16);
 }
 
 @keyframes fadeInUp {
@@ -197,11 +197,11 @@
   }
 
   .publication-card {
-    padding: 1.7rem;
+    padding: 1.5rem;
   }
 
   .paper-title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .paper-actions {

@@ -90,19 +90,19 @@
 }
 
 .timeline-content {
-  background: linear-gradient(120deg, rgba(40,36,56,0.82) 60%, rgba(100,255,218,0.13) 100%);
+  background: linear-gradient(120deg, rgba(242,247,250,0.72) 60%, rgba(218,232,241,0.86) 100%);
   padding: 2rem 2.2rem;
   border-radius: 16px;
-  border: 1.5px solid #64ffda;
-  box-shadow: 0 6px 32px 0 rgba(100,255,218,0.10), 0 1.5px 8px 0 #64ffda33;
-  backdrop-filter: blur(8px) saturate(140%);
+  border: 1px solid rgba(24, 75, 99, 0.14);
+  box-shadow: 0 10px 30px 0 rgba(18, 49, 66, 0.10), 0 1.5px 8px 0 rgba(255,255,255,0.16);
+  backdrop-filter: blur(12px) saturate(125%);
   transition: box-shadow 0.22s, transform 0.22s;
   position: relative;
   overflow: hidden;
 }
 
 .timeline-content:hover {
-  box-shadow: 0 12px 40px 0 rgba(100,255,218,0.18), 0 2px 12px 0 #64ffda55;
+  box-shadow: 0 14px 34px 0 rgba(18, 49, 66, 0.12), 0 2px 12px 0 rgba(255,255,255,0.22);
   transform: translateY(-4px) scale(1.02);
 }
 
@@ -116,25 +116,24 @@
 }
 
 .timeline-content h3 {
-  color: #64ffda;
+  color: #184b63;
   margin: 0;
   font-size: 1.5rem;
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
-  text-shadow: 0 2px 8px #64ffda22;
 }
 
 .timeline-date {
-  color: #e7e6f7;
+  color: #243746;
   font-size: 0.95rem;
   font-family: "SUSE", sans-serif;
   font-weight: 400;
-  opacity: 0.85;
+  opacity: 0.95;
 }
 
 .timeline-role {
-  color: #e7e6f7;
+  color: #243746;
   font-size: 1.1rem;
   font-family: "SUSE", sans-serif;
   font-weight: 500;
@@ -142,7 +141,7 @@
 }
 
 .timeline-link {
-  color: #64ffda;
+  color: #184b63;
   text-decoration: none;
   margin-left: 0.3rem;
   transition: opacity 0.2s;
@@ -154,12 +153,12 @@
 }
 
 .timeline-tech {
-  color: #e7e6f7;
+  color: #415461;
   font-size: 0.9rem;
   font-family: "SUSE", sans-serif;
   font-style: italic;
   margin: 0.3rem 0 1rem 0;
-  opacity: 0.75;
+  opacity: 0.92;
 }
 
 .timeline-list {
@@ -169,7 +168,7 @@
 }
 
 .timeline-list li {
-  color: #e7e6f7;
+  color: #344a57;
   line-height: 1.7;
   font-size: 1.05rem;
   font-family: "SUSE", sans-serif;
@@ -182,7 +181,7 @@
   content: "▹";
   position: absolute;
   left: 0;
-  color: #64ffda;
+  color: #184b63;
   font-size: 1.2rem;
   line-height: 1.7;
 }

@@ -96,32 +96,22 @@ function App() {
     // });
 
     // Contact fade in animation
-    gsap.fromTo(".contact-sec", {
-      opacity: 0.50,
-    }, {
-      scrollTrigger: {
-        trigger: ".contact-sec",
-        start: "top center",
-        end: "bottom top",
-        scrub: 1.2,
-        pin: true,
-        pinSpacing: true,
-        onEnter: (self) => {
-          const endValue = self.trigger.offsetTop + self.trigger.offsetHeight;
-          gsap.to(window, {
-            duration: 1.5,
-            ease: "power2.inOut",
-            onUpdate: function() {
-              window.scrollTo(0, endValue);
-            }
-          });
-        },
-        markers: false
-      },
-      y: 0,
-      opacity: 1,
-      duration: 1
-    });
+    // gsap.fromTo(".contact-sec", {
+    //   opacity: 0.50,
+    // }, {
+    //   scrollTrigger: {
+    //     trigger: ".contact-sec",
+    //     start: "top center",
+    //     end: "bottom top",
+    //     scrub: 1.2,
+    //     pin: true,
+    //     pinSpacing: true,
+    //     markers: false
+    //   },
+    //   y: 0,
+    //   opacity: 1,
+    //   duration: 1
+    // });
     
   }, []);
   useEffect(() => {

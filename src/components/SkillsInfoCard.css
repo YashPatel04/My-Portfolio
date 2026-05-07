@@ -2,21 +2,21 @@
     font-family: "SUSE", sans-serif;
     min-height: 23rem;
     border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    background: rgba(22, 17, 47, 0.398);
+    border: 1px solid rgba(24, 75, 99, 0.16);
+    background: rgba(242, 247, 250, 0.74);
     margin:0;
-    backdrop-filter: blur(1rem);
-    opacity: 0  ;
+    backdrop-filter: blur(1rem) saturate(120%);
+    opacity: 0;
 }
 #skill-var-heading{
     padding:10px;
-    border-bottom: 1.5px solid #6751b9; 
+    border-bottom: 1px solid rgba(24, 75, 99, 0.16); 
 
 }
 .skills-info-card h6 {
     font-size: 1rem;
     font-weight: 500;
-    background: linear-gradient (180deg, #ac96ff 0%, #7c5fe6 100%);
+    color: #184b63;
     background-clip: text;
     -webkit-background-clip: text;
     margin:0;
@@ -34,14 +34,15 @@
 .skill-info p{
     font-size: 0.4 rem;
     font-weight: 500;
+    color: #243746;
 }
 .skill-info .percentage{
-    color: #dd8cfa;
+    color: #10232f;
 }
 .skill-progress-bg{
     width: 100%;
     height: 0.5rem;
-    background: #382e68;
+    background: rgba(24, 75, 99, 0.08);
     margin: 1rem 0;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -49,7 +50,7 @@
 .skill-progress{
     width: 0%;
     height: 0.5rem;
-    background: linear-gradient(98deg, #aa94fe -50%,#7d60e6 50%);
+    background: linear-gradient(98deg, #184b63 -50%, #5a89a6 50%);
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
 }

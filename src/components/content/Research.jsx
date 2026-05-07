@@ -60,9 +60,9 @@ function Research() {
             </div>
             
             <div className="paper-meta">
-              <p className="paper-authors"><strong>Authors:</strong> {paper.authors}</p>
+              <p className="paper-authors"><strong>Authors: {paper.authors}</strong></p>
               {paper.journal && (
-                <p className="paper-journal"><strong>Published in:</strong> {paper.journal}</p>
+                <p className="paper-journal"><strong>Published in: {paper.journal}</strong></p>
               )}
             </div>
 
